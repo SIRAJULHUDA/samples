@@ -143,19 +143,19 @@ class Main(QtCore.QObject):
     #window.pushButton_createVideo.clicked.connect(self.createAudioVisualisation)
     #window.pushButton_selectBackground.clicked.connect(self.openBackgroundFileDialog)
 
-    fileName = r"C:\Users\MSHK\Downloads\المصطفى ﷺ  _ مشاري راشد العفاسي وابنه محمد (192 kbps).mp3"
+    fileName = "siraj.mp3"
     if not fileName == "": 
       #self.settings.setValue("inputDir", os.path.dirname(fileName))
       self.window.label_input.setText(fileName)
 
 
-    fileName = r"C:\Users\MSHK\Pictures\tesing.mkv"
+    fileName = "siraj.mkv"
     if not fileName == "": 
       #self.settings.setValue("outputDir", os.path.dirname(fileName))
       self.window.label_output.setText(fileName)
 
 
-    fileName = r"C:\Users\MSHK\Pictures\butterfly - Copy - Copy.jpg"
+    fileName = "siraj.jpg"
     if not fileName == "": 
       #self.settings.setValue("backgroundDir", os.path.dirname(fileName))
       self.window.label_background.setText(fileName)
