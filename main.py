@@ -19,7 +19,7 @@ class Command(QtCore.QObject):
   
   def __init__(self):
     QtCore.QObject.__init__(self)
-
+    print("2")
     import argparse
     self.parser = argparse.ArgumentParser(description='Create a visualization for an audio file')
     self.parser.add_argument('-i', '--input', dest='input', help='input audio file', required=True)
@@ -142,7 +142,7 @@ class Main(QtCore.QObject):
     #window.pushButton_selectOutput.clicked.connect(self.openOutputFileDialog)
     #window.pushButton_createVideo.clicked.connect(self.createAudioVisualisation)
     #window.pushButton_selectBackground.clicked.connect(self.openBackgroundFileDialog)
-
+    print("5")
     fileName = "siraj.mp3"
     if not fileName == "": 
       #self.settings.setValue("inputDir", os.path.dirname(fileName))
@@ -371,7 +371,7 @@ else:
 
     window.resize(window.width() * (dpi / 96), window.height() * (dpi / 96))
     window.verticalLayout_2.setContentsMargins(0, topMargin, 0, 0)
-  
+    print("1")
     main = Main(window)
 
     signal.signal(signal.SIGINT, main.cleanUp)
